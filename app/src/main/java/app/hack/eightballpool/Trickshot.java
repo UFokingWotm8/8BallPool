@@ -44,11 +44,11 @@ public class Trickshot extends View {
 
     int strokeWidth = 6;
     int circle;
-    int radiusCircleOne = 100;
-    int radiusCircleTwo = 100;
-    int radiusCircleAux = 50;
-    int radiusCircleAuxControls = 60;
-    int radiusCircleAuxControl = 50;
+    int radiusCircleOne = 25;
+    int radiusCircleTwo = 25;
+    int radiusCircleAux = 18;
+    int radiusCircleAuxControls = 22;
+    int radiusCircleAuxControl = 18;
 
     int radiusBall = 22;
 
