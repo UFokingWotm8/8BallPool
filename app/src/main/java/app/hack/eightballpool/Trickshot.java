@@ -50,7 +50,7 @@ public class Trickshot extends View {
     int radiusCircleAuxControls = 22;
     int radiusCircleAuxControl = 18;
 
-    int radiusBall = 22;
+    int radiusBall = 34;
 
     boolean trackStatus, touchedTheWall;
 
