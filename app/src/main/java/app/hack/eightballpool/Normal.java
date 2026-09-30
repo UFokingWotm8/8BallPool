@@ -20,7 +20,7 @@ public class Normal extends View {
     float xOnMotion, yOnMotion;
     float xCircle, yCircle;
 
-    int radius = 100;
+    int radius = 25;
     int strokeShadowWidth = 42;
     int strokeLineWidth = 6;
 
