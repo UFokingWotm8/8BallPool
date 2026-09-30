@@ -22,13 +22,13 @@
 
     <!-- Board -->
     <dimen name="boardWidth" tools:ignore="PxUsage">1620px</dimen>
-    <dimen name="boardHeight" tools:ignore="PxUsage">897px</dimen>
+    <dimen name="boardHeight" tools:ignore="PxUsage">890px</dimen>
     <dimen name="boardMarginBottom" tools:ignore="PxUsage">0.0099px</dimen>
 
     <!-- Canvas -->
-    <dimen name="canvasWidth" tools:ignore="PxUsage">1580px</dimen>
+    <dimen name="canvasWidth" tools:ignore="PxUsage">1660px</dimen>
     <dimen name="canvasHeight" tools:ignore="PxUsage">790px</dimen>
-    <dimen name="canvasMarginTop" tools:ignore="PxUsage">10px</dimen>
+    <dimen name="canvasMarginTop" tools:ignore="PxUsage">-40px</dimen>
 
     <!-- Buttons -->
     <dimen name="buttonWidth" tools:ignore="PxUsage">280px</dimen>
