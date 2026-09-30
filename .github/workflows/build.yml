@@ -17,8 +17,12 @@ jobs:
           distribution: 'zulu'
           java-version: '8'
 
-      - name: Grant Execute Permission for Gradlew
-        run: chmod +x gradlew
+      - name: Restore Missing Gradle Files
+        run: |
+          mkdir -p gradle/wrapper
+          curl -sLo gradlew https://raw.githubusercontent.com/RafhaanShah/8BallPoolOverlay/master/gradlew
+          curl -sLo gradle/wrapper/gradle-wrapper.jar https://raw.githubusercontent.com/RafhaanShah/8BallPoolOverlay/master/gradle/wrapper/gradle-wrapper.jar
+          chmod +x gradlew
 
       - name: Build APK
         run: ./gradlew assembleDebug --stacktrace
