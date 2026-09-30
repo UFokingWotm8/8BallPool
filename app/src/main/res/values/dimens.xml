@@ -26,8 +26,8 @@
     <dimen name="boardMarginBottom" tools:ignore="PxUsage">0.0099px</dimen>
 
     <!-- Canvas -->
-    <dimen name="canvasWidth" tools:ignore="PxUsage">1458px</dimen>
-    <dimen name="canvasHeight" tools:ignore="PxUsage">731px</dimen>
+    <dimen name="canvasWidth" tools:ignore="PxUsage">1468px</dimen>
+    <dimen name="canvasHeight" tools:ignore="PxUsage">735px</dimen>
     <dimen name="canvasMarginTop" tools:ignore="PxUsage">82px</dimen>
 
     <!-- Buttons -->
