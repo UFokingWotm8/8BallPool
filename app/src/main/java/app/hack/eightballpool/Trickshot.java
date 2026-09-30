@@ -51,6 +51,7 @@ public class Trickshot extends View {
     int radiusCircleAuxControl = 18;
 
     int radiusBall = 36;
+    int cushionOffset = 60;
 
     boolean trackStatus, touchedTheWall;
 
@@ -301,14 +302,14 @@ public class Trickshot extends View {
                     }
 
                     // Left
-                    if (xOnMotion < radiusBall) {
-                        xCircleTwo = radiusBall;
+                    if (xOnMotion < (radiusBall + cushionOffset)) {
+                        xCircleTwo = radiusBall + cushionOffset;
                         touchedTheWall = true;
                     }
 
                     // Right
-                    if (xOnMotion > (getWidth() - radiusBall)) {
-                        xCircleTwo = getWidth() - radiusBall;
+                    if (xOnMotion > (getWidth() - radiusBall - cushionOffset)) {
+                        xCircleTwo = getWidth() - radiusBall - cushionOffset;
                         touchedTheWall = true;
                     }
                 }
@@ -428,12 +429,12 @@ public class Trickshot extends View {
         }
 
         // Left
-        if (xCircleTwo == radiusBall) {
+        if (xCircleTwo <= (radiusBall + cushionOffset)) {
             reflectedAngleOne = 180 - angle;
         }
 
         // Right
-        if (xCircleTwo == (getWidth() - radiusBall)) {
+        if (xCircleTwo >= (getWidth() - radiusBall - cushionOffset)) {
             reflectedAngleOne = 180 - angle;
         }
 
@@ -503,14 +504,14 @@ public class Trickshot extends View {
             yCircleOneAuxTop = yCircleOne - 140;
         }
 
-        if (yCircleOne < radiusBall) {
-            yCircleOne = radiusBall;
-            xCircleOneAuxBottom = xCircleOne - 110;
-            yCircleOneAuxBottom = yCircleOne + 140;
+        if (xCircleOne < (radiusBall + cushionOffset)) {
+            xCircleOne = radiusBall + cushionOffset;
+            xCircleOneAuxTop = xCircleOne + 110;
+            yCircleOneAuxTop = yCircleOne - 140;
         }
 
-        if (xCircleOne > (getWidth() - radiusBall)) {
-            xCircleOne = getWidth() - radiusBall;
+        if (xCircleOne > (getWidth() - radiusBall - cushionOffset)) {
+            xCircleOne = getWidth() - radiusBall - cushionOffset;
             xCircleOneAuxBottom = xCircleOne - 110;
             yCircleOneAuxBottom = yCircleOne + 140;
         }
